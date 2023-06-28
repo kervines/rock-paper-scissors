@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Rubik', sans-serif;
+  height: 100vh;
+  background-color: #f3f3f3;
+}
+
+.header {
+  background-color: #23324e;
+  font-size: 1.25rem;
+}
+
+.scores {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.score-header {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  color: #ff5511;
+  letter-spacing: 2px;
+}
+
+.score-header:nth-child(2) {
+  border-left: 2px solid #f3f3f3;
+  border-radius: 3px;
+}
+
+.main {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  position: relative;
+}
+
+button {
+  width: 5rem;
+  height: 5rem;
+}
+
+.section-main {
+  margin: 0 auto;
+}
+
+.player-main::before,
+.machine-main::before {
+  font-size: 2rem;
+  color: #23324e;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}
+
+.player-main::before {
+  content: 'Human';
+  top: 90px;
+}
+
+.machine-main::before {
+  content: 'Machine';
+  bottom: 90px;
+}
+
+.result {
+  color: #ff5511;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pedra/Papel/Terousa | Kervines</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="./script.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="scores">
+      <div class="score-header score-player">
+        <p class="player">Human</p>
+        <span id="score-p" class="score">0</span>
+      </div>
+      <div class="score-header score-machine">
+        <p class="machine">Machine</p>
+        <span id="score-m" class="score">0</span>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section id="player-human" class="section-main player-main">
+      <button class="btn" id="rock">Pedra</button>
+      <button class="btn" id="paper">Papel</button>
+      <button class="btn" id="scissors">Tesoura</button>
+    </section>
+    <section class="section-main machine-main">
+      <button class="btn">Pedra</button>
+      <button class="btn">Papel</button>
+      <button class="btn">Tesoura</button>
+    </section>
+    <section class="result">
+      <h1>Resultado</h1>
+    </section>
+  </main>
+
+</body>
+
+</html>
